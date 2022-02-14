@@ -42,7 +42,8 @@ SECRET_KEY = os.environ.get('DJANGO_SECRET_KEY', 'gj%7t91&c$*q&+fkx-wuug^i$0b@@l
 DEBUG = False
 
 ALLOWED_HOSTS = [
-  '127.0.0.1'
+  '127.0.0.1',
+  'admin'
 ]
 CUSTOM_ALLOWED_HOSTS = os.environ.get('ALLOWED_HOSTS', '').split(sep=',')
 ALLOWED_HOSTS.extend(CUSTOM_ALLOWED_HOSTS)
