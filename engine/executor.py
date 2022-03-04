@@ -45,6 +45,7 @@ def execute_test(test_executor: TestExecutor, email):
         config = test_yml["config"]
         task = test_yml["task"]
         name = test_yml["name"]  # TODO: Alert user if no/null config/task/name is provided
+        logger.info("Execution started for test, name = " + name)
         alert_type = None
         if "alert_type" in test_yml:
             alert_type = test_yml['alert_type']
